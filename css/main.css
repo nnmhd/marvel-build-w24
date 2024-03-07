@@ -21,15 +21,39 @@ header {
     width: 300px;
     display: block;
     margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#character_nav {
+    background-color: #675050;
+    background-image: url(../images/characters_art_mas_mob_01.jpeg);
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .characters {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    font-size: .8rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .characters li {
     height: 220px;
+    background-color: black;
+    margin: 10px 8px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 155px 0 0 red inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.characters li:hover {
+    box-shadow: 0 220px 0 0 red inset;
 }
 
 .characters li h3 {
@@ -78,4 +102,12 @@ header {
 
 footer {
     text-align: center;
+    padding: 20px 0;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: brown;
 }
